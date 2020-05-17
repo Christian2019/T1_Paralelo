@@ -3,8 +3,8 @@
 #include <math.h>
 #include <omp.h>
 
-# define NPOINTS 2
-# define MAXITER 10
+# define NPOINTS 2000
+# define MAXITER 2000
 
 
 struct complex{
@@ -13,6 +13,7 @@ struct complex{
 };
 
 int main(){
+printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
     printf("teste\n");
   int numoutside = 0;
   double area, error, ztemp;
@@ -28,7 +29,15 @@ int main(){
  */
 
   start = omp_get_wtime();
+  
+  omp_set_num_threads(4);
 
+#pragma omp parallel private (c,z)
+{
+int id = omp_get_thread_num();
+int nt = omp_get_num_threads();
+printf("Sou a thread %d de um total %d\n",id,nt);
+ #pragma omp for
   for (int i=0; i<NPOINTS; i++) {
     for (int j=0; j<NPOINTS; j++) {
       c.real = -2.0+2.5*(double)(i)/(double)(NPOINTS)+1.0e-7;
@@ -45,7 +54,7 @@ int main(){
       }
     }
   }
-
+}
 
   finish = omp_get_wtime();
 

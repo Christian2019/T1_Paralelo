@@ -3,8 +3,8 @@
 #include <math.h>
 #include <omp.h>
 
-# define NPOINTS 2
-# define MAXITER 10
+# define NPOINTS 2000
+# define MAXITER 2000
 
 
 struct complex{
@@ -13,7 +13,7 @@ struct complex{
 };
 
 int main(){
-    printf("teste\n");
+  
   int numoutside = 0;
   double area, error, ztemp;
   double start, finish;
