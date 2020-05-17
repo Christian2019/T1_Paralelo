@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1589085179 source:f:\puc\7 semestre\programacao paralela\t1_paralelo\print_test.c
+	<stdio.h>
+
+1589143736 source:f:\puc\7 semestre\programacao paralela\t1_paralelo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<omp.h>
+
