@@ -36,7 +36,7 @@ printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
   int j;
   int iter;
 
-#pragma omp parallel private (i,j,iter,c,z,ztemp)
+#pragma omp parallel private (i,j,iter,c,z,ztemp) reduction(+:numoutside)
 {
 int id = omp_get_thread_num();
 int nt = omp_get_num_threads();
