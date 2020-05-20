@@ -3,9 +3,9 @@
 #include <math.h>
 #include <omp.h>
 
-//# define NPOINTS 2000
-# define MAXITER 2000
 
+# define MAXITER 2000
+//export OMP_NUM_THREADS=8
 
 struct complex{
   double real;
@@ -17,16 +17,22 @@ int main(){
   double area, error, ztemp;
   double start, finish,start2,finish2;
   struct complex z, c;
-   int i;
+  int i;
   int j;
   int iter;
   start2 = omp_get_wtime();
+ #pragma omp parallel
+ {
+	int id = omp_get_thread_num();
+	int nt = omp_get_num_threads();
+	printf("Sou a thread %d de um total %d\n",id,nt);
+
+  }
 for (int NPOINTS=500; NPOINTS<5000; NPOINTS+=500){
 printf("NPOINTS = %1.2d \n",NPOINTS);
-for (int x=0; x<4; x++){
-printf("x = %1.2d \n",x);
+for (int k=0; k<4; k++){
+printf("k = %1.2d \n",k);
 int numoutside = 0;
-printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
 
   
 
@@ -48,9 +54,7 @@ printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
 
 #pragma omp parallel private (i,j,iter,c,z,ztemp) reduction(+:numoutside)
 {
-int id = omp_get_thread_num();
-int nt = omp_get_num_threads();
-printf("Sou a thread %d de um total %d\n",id,nt);
+
  #pragma omp for
   for ( i=0; i<NPOINTS; i++) {
     for ( j=0; j<NPOINTS; j++) {
