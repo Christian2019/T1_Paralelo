@@ -13,14 +13,19 @@ struct complex{
 };
 
 int main(){
+int numoutside = 0;
+  double area, error, ztemp;
+  double start, finish,start2,finish2;
+  struct complex z, c;
+   int i;
+  int j;
+  int iter;
+  start2 = omp_get_wtime();
 for (int NPOINTS=500; NPOINTS<5000; NPOINTS+=500){
 for (int x=0; x<4; x++){
 printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
 
-  int numoutside = 0;
-  double area, error, ztemp;
-  double start, finish;
-  struct complex z, c;
+  
 
 /*
  *
@@ -33,9 +38,7 @@ printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
   start = omp_get_wtime();
   
   
-  int i;
-  int j;
-  int iter;
+ 
 
 #pragma omp parallel private (i,j,iter,c,z,ztemp) reduction(+:numoutside)
 {
@@ -78,4 +81,6 @@ printf("Sou a thread %d de um total %d\n",id,nt);
       printf("Time = %12.8f seconds\n",finish-start);
 }
 }
+finish2 = omp_get_wtime();
+printf("Total Time = %12.8f seconds\n",finish2-start2);
   }
