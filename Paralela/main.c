@@ -36,16 +36,12 @@ printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
  */
 
   start = omp_get_wtime();
-<<<<<<< HEAD
-  
-  
- 
-=======
+
 
   int i;
   int j;
   int iter;
->>>>>>> c03f166e9206168d209d82775809f7df86cf2961
+
 
 #pragma omp parallel private (i,j,iter,c,z,ztemp) reduction(+:numoutside)
 {
