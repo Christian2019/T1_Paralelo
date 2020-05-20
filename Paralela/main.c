@@ -13,7 +13,7 @@ struct complex{
 };
 
 int main(){
-int numoutside = 0;
+
   double area, error, ztemp;
   double start, finish,start2,finish2;
   struct complex z, c;
@@ -22,7 +22,10 @@ int numoutside = 0;
   int iter;
   start2 = omp_get_wtime();
 for (int NPOINTS=500; NPOINTS<5000; NPOINTS+=500){
+printf("NPOINTS = %1.2d \n",NPOINTS);
 for (int x=0; x<4; x++){
+printf("x = %1.2d \n",x);
+int numoutside = 0;
 printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
 
   
