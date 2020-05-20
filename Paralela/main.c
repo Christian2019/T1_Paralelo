@@ -30,7 +30,6 @@ printf("\nOla 1 - FORA DA REGIAO PARALELA ...\n\n");
 
   start = omp_get_wtime();
   
-  omp_set_num_threads(8);
   
   int i;
   int j;
