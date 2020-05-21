@@ -20,7 +20,10 @@ int main(){
   int i;
   int j;
   int iter;
+  
+    
   start2 = omp_get_wtime();
+
  #pragma omp parallel
  {
 	int id = omp_get_thread_num();
@@ -28,7 +31,7 @@ int main(){
 	printf("Sou a thread %d de um total %d\n",id,nt);
 
   }
-for (int NPOINTS=500; NPOINTS<5000; NPOINTS+=500){
+for (int NPOINTS=500; NPOINTS<=5000; NPOINTS+=500){
 printf("NPOINTS = %1.2d \n",NPOINTS);
 for (int k=0; k<4; k++){
 printf("k = %1.2d \n",k);
@@ -93,4 +96,5 @@ int numoutside = 0;
 }
 finish2 = omp_get_wtime();
 printf("Total Time = %12.8f seconds\n",finish2-start2);
+
   }

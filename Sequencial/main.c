@@ -22,7 +22,7 @@ int main(){
   int iter;
   start2 = omp_get_wtime();
 
-for (int NPOINTS=500; NPOINTS<5000; NPOINTS+=500){
+for (int NPOINTS=500; NPOINTS<=5000; NPOINTS+=500){
 printf("NPOINTS = %1.2d \n",NPOINTS);
 for (int k=0; k<4; k++){
 printf("k = %1.2d \n",k);
