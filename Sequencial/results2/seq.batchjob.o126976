@@ -1,0 +1,42 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host hostname
+
+Initial Time is date
+
+Directory is pwd
+
+This jobs runs on the following nodes:
+cat $PBS_NODEFILE | uniq
+
+JOB_ID:
+echo $PBS_JOBID
+
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12725 on the batch nodes
+Doing node grad01
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 00:22:11 
+
+ -- MEMORY       = 2036kb 
+
+ -- VIRTUAL MEM  = 21808kb 
+
+ -- ELAPSED TIME = 00:22:21 
+

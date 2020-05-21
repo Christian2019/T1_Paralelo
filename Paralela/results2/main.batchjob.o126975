@@ -1,0 +1,95 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host hostname
+
+Initial Time is date
+
+Directory is pwd
+
+This jobs runs on the following nodes:
+cat $PBS_NODEFILE | uniq
+
+JOB_ID:
+echo $PBS_JOBID
+
+Sou a thread 0 de um total 8
+Sou a thread 2 de um total 8
+Sou a thread 6 de um total 8
+Sou a thread 1 de um total 8
+Sou a thread 4 de um total 8
+Sou a thread 3 de um total 8
+Sou a thread 5 de um total 8
+Sou a thread 7 de um total 8
+NPOINTS = 500 
+k = 03 
+Area of Mandlebrot set =   1.51121250 +/-   0.00302243
+Time =   0.41671355 seconds
+NPOINTS = 1000 
+k = 03 
+Area of Mandlebrot set =   1.51020562 +/-   0.00151021
+Time =   1.62264219 seconds
+NPOINTS = 1500 
+k = 03 
+Area of Mandlebrot set =   1.50959500 +/-   0.00100640
+Time =   3.68681947 seconds
+NPOINTS = 2000 
+k = 03 
+Area of Mandlebrot set =   1.50928453 +/-   0.00075464
+Time =   6.56840534 seconds
+NPOINTS = 2500 
+k = 03 
+Area of Mandlebrot set =   1.50905790 +/-   0.00060362
+Time =  10.20410463 seconds
+NPOINTS = 3000 
+k = 03 
+Area of Mandlebrot set =   1.50903813 +/-   0.00050301
+Time =  14.61284091 seconds
+NPOINTS = 3500 
+k = 03 
+Area of Mandlebrot set =   1.50894735 +/-   0.00043113
+Time =  19.95212070 seconds
+NPOINTS = 4000 
+k = 03 
+Area of Mandlebrot set =   1.50881590 +/-   0.00037720
+Time =  25.94848285 seconds
+NPOINTS = 4500 
+k = 03 
+Area of Mandlebrot set =   1.50882444 +/-   0.00033529
+Time =  32.97037250 seconds
+Total Time = 115.98318430 seconds
+Final Time is date
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12725 on the batch nodes
+Doing node grad02
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad03
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 00:04:49 
+
+ -- MEMORY       = 3776kb 
+
+ -- VIRTUAL MEM  = 105496kb 
+
+ -- ELAPSED TIME = 00:01:56 
+
