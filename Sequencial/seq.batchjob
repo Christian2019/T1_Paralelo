@@ -1,10 +1,10 @@
 #!/bin/bash
 #PBS -m abe
 #PBS -V
-#PBS -l nodes=2:ppn=1:cluster-Grad,walltime=02:00:00
+#PBS -l nodes=1:ppn=1:cluster-Grad,walltime=02:00:00
 #PBS -r n
 #PBS -j oe
-#PBS -d /home/pp12725/T1_Paralelo/Sequencial/results3
+#PBS -d /home/pp12725/T1_Paralelo/Sequencial
 ################
 echo Running on host 'hostname'
 echo
@@ -18,5 +18,5 @@ echo
 echo JOB_ID:
 echo 'echo $PBS_JOBID'
 echo ################
-../main
+./main
 echo Final Time is 'date'
