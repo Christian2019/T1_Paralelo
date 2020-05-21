@@ -1,0 +1,186 @@
+--------------------------------------
+Running PBS prologue script
+
+Checking all prerequisites...
+Done.
+
+Running on host hostname
+
+Initial Time is date
+
+Directory is pwd
+
+This jobs runs on the following nodes:
+cat $PBS_NODEFILE | uniq
+
+JOB_ID:
+echo $PBS_JOBID
+
+Sou a thread 0 de um total 2
+Sou a thread 1 de um total 2
+NPOINTS = 500 
+k = 00 
+Area of Mandlebrot set =   1.51121250 +/-   0.00302243
+Time =   1.31223103 seconds
+k = 01 
+Area of Mandlebrot set =   1.51121250 +/-   0.00302243
+Time =   1.31483116 seconds
+k = 02 
+Area of Mandlebrot set =   1.51121250 +/-   0.00302243
+Time =   1.31491415 seconds
+k = 03 
+Area of Mandlebrot set =   1.51121250 +/-   0.00302243
+Time =   1.31438117 seconds
+NPOINTS = 1000 
+k = 00 
+Area of Mandlebrot set =   1.51020562 +/-   0.00151021
+Time =   5.20602121 seconds
+k = 01 
+Area of Mandlebrot set =   1.51020562 +/-   0.00151021
+Time =   5.22301076 seconds
+k = 02 
+Area of Mandlebrot set =   1.51020562 +/-   0.00151021
+Time =   5.43487926 seconds
+k = 03 
+Area of Mandlebrot set =   1.51020562 +/-   0.00151021
+Time =   5.43411858 seconds
+NPOINTS = 1500 
+k = 00 
+Area of Mandlebrot set =   1.50959500 +/-   0.00100640
+Time =  11.70663776 seconds
+k = 01 
+Area of Mandlebrot set =   1.50959500 +/-   0.00100640
+Time =  11.78443066 seconds
+k = 02 
+Area of Mandlebrot set =   1.50959500 +/-   0.00100640
+Time =  11.79784227 seconds
+k = 03 
+Area of Mandlebrot set =   1.50959500 +/-   0.00100640
+Time =  11.75246336 seconds
+NPOINTS = 2000 
+k = 00 
+Area of Mandlebrot set =   1.50928453 +/-   0.00075464
+Time =  21.70643206 seconds
+k = 01 
+Area of Mandlebrot set =   1.50928453 +/-   0.00075464
+Time =  20.98105491 seconds
+k = 02 
+Area of Mandlebrot set =   1.50928453 +/-   0.00075464
+Time =  21.00604817 seconds
+k = 03 
+Area of Mandlebrot set =   1.50928453 +/-   0.00075464
+Time =  20.91859934 seconds
+NPOINTS = 2500 
+k = 00 
+Area of Mandlebrot set =   1.50905790 +/-   0.00060362
+Time =  33.49329041 seconds
+k = 01 
+Area of Mandlebrot set =   1.50905790 +/-   0.00060362
+Time =  32.64659951 seconds
+k = 02 
+Area of Mandlebrot set =   1.50905790 +/-   0.00060362
+Time =  32.80760456 seconds
+k = 03 
+Area of Mandlebrot set =   1.50905790 +/-   0.00060362
+Time =  33.71104583 seconds
+NPOINTS = 3000 
+k = 00 
+Area of Mandlebrot set =   1.50903813 +/-   0.00050301
+Time =  46.75510721 seconds
+k = 01 
+Area of Mandlebrot set =   1.50903813 +/-   0.00050301
+Time =  46.74500830 seconds
+k = 02 
+Area of Mandlebrot set =   1.50903813 +/-   0.00050301
+Time =  60.19771782 seconds
+k = 03 
+Area of Mandlebrot set =   1.50903813 +/-   0.00050301
+Time =  67.62927732 seconds
+NPOINTS = 3500 
+k = 00 
+Area of Mandlebrot set =   1.50894735 +/-   0.00043113
+Time =  92.04921849 seconds
+k = 01 
+Area of Mandlebrot set =   1.50894735 +/-   0.00043113
+Time =  92.02361204 seconds
+k = 02 
+Area of Mandlebrot set =   1.50894735 +/-   0.00043113
+Time =  92.00093926 seconds
+k = 03 
+Area of Mandlebrot set =   1.50894735 +/-   0.00043113
+Time =  92.04097893 seconds
+NPOINTS = 4000 
+k = 00 
+Area of Mandlebrot set =   1.50881590 +/-   0.00037720
+Time = 120.17039677 seconds
+k = 01 
+Area of Mandlebrot set =   1.50881590 +/-   0.00037720
+Time = 120.09004446 seconds
+k = 02 
+Area of Mandlebrot set =   1.50881590 +/-   0.00037720
+Time = 120.19238296 seconds
+k = 03 
+Area of Mandlebrot set =   1.50881590 +/-   0.00037720
+Time = 120.14933222 seconds
+NPOINTS = 4500 
+k = 00 
+Area of Mandlebrot set =   1.50882444 +/-   0.00033529
+Time = 152.06883520 seconds
+k = 01 
+Area of Mandlebrot set =   1.50882444 +/-   0.00033529
+Time = 152.07452409 seconds
+k = 02 
+Area of Mandlebrot set =   1.50882444 +/-   0.00033529
+Time = 152.06468575 seconds
+k = 03 
+Area of Mandlebrot set =   1.50882444 +/-   0.00033529
+Time = 152.14251845 seconds
+Total Time = 1969.26159768 seconds
+Final Time is date
+
+--------------------------------------
+Running PBS epilogue.user script
+
+End of PBS epilogue.user script
+
+--------------------------------------
+Running PBS epilogue script
+
+Disabling access of user pp12725 on the batch nodes
+Doing node grad01
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad02
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad04
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad05
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad06
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+Doing node grad07
+
+ -- Killing all stale user  processes... done.
+ -- Cleaning-up any shmemory segments... done.
+
+Done.
+
+Resources used:
+
+ -- CPU TIME     = 00:38:05 
+
+ -- MEMORY       = 3764kb 
+
+ -- VIRTUAL MEM  = 56320kb 
+
+ -- ELAPSED TIME = 00:32:52 
+

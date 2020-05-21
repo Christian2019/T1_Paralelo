@@ -1,10 +1,10 @@
 #!/bin/bash
 #PBS -m abe
 #PBS -V
-#PBS -l nodes=1:ppn=16:cluster-Grad,walltime=00:10:00
+#PBS -l nodes=2:ppn=8:cluster-Grad,walltime=01:00:00
 #PBS -r n
 #PBS -j oe
-#PBS -d /home/pp12725/T1_Paralelo/Paralela/results
+#PBS -d /home/pp12725/T1_Paralelo/Paralela/results2
 ################
 echo Running on host 'hostname'
 echo
